@@ -2,6 +2,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
+    { "source": "/portalbiomed/:match*", "destination": "/Brasil/portalbiomed/:match*" },
     { "source": "/Elefantol/:match*", "destination": "/Brasil/Elefantol/:match*" },
     { "source": "/FIGNAR/:match*", "destination": "/Brasil/FIGNAR/:match*" },
     { "source": "/Ghdrol/:match*", "destination": "/Brasil/Ghdrol/:match*" },
