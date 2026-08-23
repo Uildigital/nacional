@@ -541,6 +541,27 @@
         .modal-close:hover {
             color: var(--primary);
         }
+
+        .google-disclaimer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            color: #94A3B8;
+            text-align: center;
+            padding: 12px 20px;
+            font-size: 0.75rem;
+            line-height: 1.4;
+            z-index: 10000;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .google-disclaimer a {
+            color: #CBD5E1;
+            text-decoration: underline;
+            margin: 0 5px;
+        }
     </style>
 <script defer src="/_vercel/insights/script.js"></script>
 </head>
@@ -605,5 +626,10 @@
             }
         });
     </script>
+    <div class="google-disclaimer">
+        Este site não é afiliado ao Google ou a qualquer entidade do Google. Depois de sair do Google, a responsabilidade é nossa.<br>
+        Os resultados podem variar de pessoa para pessoa. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença.<br>
+        <a href="#">Políticas de Privacidade</a> | <a href="#">Termos de Uso</a>
+    </div>
 </body>
 </html>
