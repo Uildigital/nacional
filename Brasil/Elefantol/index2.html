@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elefantol - Acesso Oficial Verificado</title>
+
+    <!-- Google tag (gtag.js) - MCC BRASIL -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16772383581"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-16772383581');
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap');
+        
+        :root {
+            --primary: #0F172A; /* Slate 900 */
+            --gold-brand: #EAB308; /* Yellow 500 */
+            --gold-dark: #CA8A04; /* Yellow 600 */
+            --green-safe: #10B981; /* Emerald 500 */
+            --green-dark: #059669; /* Emerald 600 */
+            --red-alert: #DC2626; /* Red 600 */
+            --bg-body: #1E293B; /* Slate 800 */
+            --text-light: #F8FAFC; /* Slate 50 */
+            --text-muted: #CBD5E1; /* Slate 300 */
+            --border-light: #334155; /* Slate 700 */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-light);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header-alert {
+            background-color: var(--gold-brand);
+            color: var(--primary);
+            text-align: center;
+            padding: 14px 20px;
+            font-size: 0.95rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 4px 10px rgba(234, 179, 8, 0.2);
+            text-transform: uppercase;
+        }
+
+        .header-alert svg {
+            width: 22px;
+            height: 22px;
+            animation: pulse-icon 2s infinite;
+        }
+
+        @keyframes pulse-icon {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.15); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 40px auto;
+            background: var(--primary);
+            border-radius: 12px;
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
+            border: 1px solid var(--border-light);
+            overflow: hidden;
+        }
+
+        .hero-section {
+            padding: 50px 45px 35px;
+            text-align: center;
+            background: linear-gradient(to bottom, #0F172A 0%, #1E293B 100%);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .security-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgba(234, 179, 8, 0.1);
+            color: var(--gold-brand);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.85rem;
+            margin-bottom: 25px;
+            border: 1px solid rgba(234, 179, 8, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            color: #fff;
+            line-height: 1.15;
+            margin-bottom: 15px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        h1 span {
+            color: var(--gold-brand);
+            position: relative;
+            display: inline-block;
+        }
+
+        h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: var(--gold-dark);
+            border-radius: 3px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            max-width: 650px;
+            margin: 0 auto 35px;
+            line-height: 1.5;
+        }
+
+        .product-hero-image {
+            margin: 0 auto 20px;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .product-hero-image img {
+            max-width: 100%;
+            height: auto;
+            max-height: 420px;
+            filter: drop-shadow(0 25px 25px rgba(0,0,0,0.5));
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 12px;
+        }
+
+        .product-hero-image img:hover {
+            transform: scale(1.04);
+        }
+
+        .fraud-alert {
+            background-color: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            border-left: 6px solid var(--red-alert);
+            padding: 22px;
+            border-radius: 8px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .fraud-alert h4 {
+            color: #FCA5A5;
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .fraud-alert p {
+            font-size: 1rem;
+            color: #FECACA;
+            line-height: 1.5;
+        }
+
+        .content-section {
+            padding: 45px;
+            background-color: var(--primary);
+        }
+
+        .grid-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 45px;
+        }
+
+        .benefit-card {
+            background: #1E293B;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid var(--border-light);
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            transition: all 0.2s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px -5px rgba(0,0,0,0.3);
+            border-color: var(--gold-brand);
+        }
+
+        .benefit-icon {
+            background: rgba(234, 179, 8, 0.1);
+            color: var(--gold-brand);
+            padding: 14px;
+            border-radius: 12px;
+            display: flex;
+        }
+
+        .benefit-icon svg {
+            width: 26px;
+            height: 26px;
+        }
+
+        .benefit-text h4 {
+            font-size: 1.15rem;
+            color: #fff;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .benefit-text p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .cta-container {
+            text-align: center;
+            padding: 10px 20px 45px;
+        }
+
+        .btn-checkout {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--green-safe) 0%, var(--green-dark) 100%);
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 900;
+            padding: 24px 45px;
+            border-radius: 14px;
+            text-transform: uppercase;
+            box-shadow: 0 15px 30px rgba(5, 150, 105, 0.35);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 650px;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-checkout.btn-gold {
+            background: linear-gradient(135deg, var(--gold-brand) 0%, var(--gold-dark) 100%);
+            color: var(--primary);
+            box-shadow: 0 15px 30px rgba(234, 179, 8, 0.25);
+        }
+
+        .btn-checkout:hover {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+        }
+
+        .btn-checkout::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.3), rgba(255,255,255,0));
+            transform: skewX(-20deg);
+            animation: gloss 3s infinite;
+        }
+
+        .secure-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 18px;
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .secure-info svg {
+            width: 20px;
+            height: 20px;
+            color: var(--green-safe);
+        }
+
+        .faq-section {
+            border-top: 1px solid var(--border-light);
+            padding-top: 35px;
+            margin-top: 10px;
+        }
+
+        .faq-section h3 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            background: #1E293B;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+        }
+
+        .faq-item h5 {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+        }
+        
+        .faq-item h5::before {
+            content: "Q:";
+            color: var(--gold-brand);
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+
+        .faq-item p {
+            font-size: 1rem;
+            color: var(--text-muted);
+            padding-left: 30px;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px 60px;
+            font-size: 0.9rem;
+            color: #64748B;
+        }
+
+        footer a {
+            color: #94A3B8;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .legal {
+            max-width: 700px;
+            margin: 25px auto 0;
+            line-height: 1.6;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            body { overflow-x: hidden; }
+            .container { margin: 15px 10px; border-radius: 10px; width: auto; overflow: hidden; }
+            h1 { font-size: 2rem; }
+            .hero-section, .content-section { padding: 25px 15px; }
+            .btn-checkout { font-size: 1.15rem; padding: 16px; width: 100%; display: block; white-space: normal; line-height: 1.3; }
+            .product-hero-image img { max-height: 240px; }
+            .special-discount-alert { font-size: 1.05rem !important; padding: 15px !important; }
+            .cta-container a.btn-checkout { font-size: 1.15rem !important; padding: 16px !important; }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.7rem; }
+            .btn-checkout { font-size: 1.05rem !important; }
+            .header-alert { font-size: 0.85rem; padding: 10px; }
+            .special-discount-alert strong { font-size: 1.1rem !important; }
+        }
+    </style>
+
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+    <div class="header-alert">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+        AVISO URGENTE: DEVIDO À ALTA DEMANDA, O ESTOQUE DE ELEFANTOL PODE ACABAR HOJE.
+    </div>
+
+    <div class="container">
+        
+        <div class="hero-section">
+            <div class="security-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                Portal Oficial e 100% Seguro
+            </div>
+
+            <h1>Garante o seu <span>Elefantol Original</span></h1>
+            
+            <p class="subtitle">A fórmula definitiva para quem busca energia, vigor e máxima performance. Acesse os preços de fábrica através deste portal verificado.</p>
+
+            <div class="special-discount-alert" style="background-color: rgba(234, 179, 8, 0.05); border: 2px dashed var(--gold-brand); padding: 18px; border-radius: 8px; color: var(--gold-brand); font-weight: 600; font-size: 1.15rem; max-width: 650px; margin: 0 auto 25px;">
+                🔥 <strong>OFERTA EXCLUSIVA:</strong> Compre hoje e garanta o seu tratamento de Elefantol com um <strong style="color: #fff; font-size: 1.3rem; font-weight: 900;">Desconto Brutal de 70%!</strong>
+            </div>
+
+            <div class="cta-container" style="padding-top: 0px; padding-bottom: 30px;">
+                <a href="https://ev.braip.com/campanhas/cpa/camk7grod#action" class="btn-checkout btn-gold" style="font-size: 1.4rem; padding: 20px 30px;">
+                    ATIVAR MEU DESCONTO DE 70% AGORA
+                </a>
+            </div>
+
+            <div class="product-hero-image">
+                <img src="Elefantol.webp" alt="Pote Oficial Elefantol" style="background-color: #1E293B; min-height: 250px; border: 1px solid #334155; max-width: 100%; border-radius: 12px; filter: drop-shadow(0 25px 25px rgba(0,0,0,0.8));" onerror="this.src='https://placehold.co/600x400/1E293B/EAB308?text=Elefantol+Imagem'" />
+                <p style="font-size: 0.8rem; color: #64748B; margin-top: 8px;">*Imagem ilustrativa do produto oficial</p>
+            </div>
+
+            <div class="fraud-alert">
+                <h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="22" height="22">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    Aviso: Cuidado com a Pirataria
+                </h4>
+                <p>Devido ao grande sucesso do <strong>Elefantol</strong>, produtos falsificados estão sendo vendidos em sites não oficiais. Para garantir resultados reais e a sua segurança, compre APENAS através deste portal blindado.</p>
+            </div>
+
+            <div class="cta-container" style="padding-top: 20px; padding-bottom: 0px;">
+                <a href="https://ev.braip.com/campanhas/cpa/camk7grod#action" class="btn-checkout">
+                    IR PARA O SITE OFICIAL
+                </a>
+            </div>
+        </div>
+
+        <div class="content-section">
+            
+            <div class="grid-benefits">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Explosão de Energia</h4>
+                        <p>Fórmula desenvolvida para maximizar a sua performance e entregar resultados rápidos e visíveis.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <div class="benefit-text">
+                        <h4>Aprovado e Seguro</h4>
+                        <p>Totalmente regulamentado pela ANVISA. Suplementação 100% natural e sem efeitos colaterais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h3>Dúvidas Frequentes</h3>
+                
+                <div class="faq-item">
+                    <h5>Esse site é seguro?</h5>
+                    <p>Com certeza. Ao clicar no botão, você será direcionado para a página de checkout da Braip, uma das maiores e mais seguras plataformas de pagamentos do Brasil.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h5>Como funciona a Garantia?</h5>
+                    <p>O fabricante oficial oferece 90 dias de garantia incondicional. Se você não notar diferença na sua performance, o seu dinheiro é devolvido.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h5>Quanto tempo demora para chegar?</h5>
+                    <p>O prazo de entrega varia de acordo com a sua região no Brasil, mas o envio é realizado em até 24h após a aprovação do pagamento.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cta-container">
+            <a href="https://ev.braip.com/campanhas/cpa/camk7grod#action" class="btn-checkout btn-gold">
+                SIM! QUERO MEU ELEFANTOL COM DESCONTO
+            </a>
+            <div class="secure-info">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                </svg>
+                Ambiente criptografado e seguro.
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="links">
+            <a href="/termos.html" target="_blank">Termos de Uso</a>
+            <a href="/privacidade.html" target="_blank">Políticas de Privacidade</a>
+            <a href="/contato.html" target="_blank">Contato</a>
+        </div>
+        <div class="legal">
+            <p><strong>Aviso de Afiliado:</strong> Este site atua como um portal parceiro independente. Não somos os fabricantes do Elefantol. Ao clicar nos botões, você é redirecionado para a plataforma oficial e blindada de vendas. O suporte e envio são de total responsabilidade do produtor.</p>
+            <p>&copy; 2026. Portal Natural Vir. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Captura parâmetros da URL e adiciona aos links da Braip no formato &src=...
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const kw = urlParams.get('kw') || '';
+            const cp = urlParams.get('cp') || '';
+            const dv = urlParams.get('dv') || '';
+            
+            let srcParts = [];
+            if(kw) srcParts.push('kw-' + kw);
+            if(cp) srcParts.push('cp-' + cp);
+            if(dv) srcParts.push('dv-' + dv);
+            const srcValue = srcParts.join('_');
+
+            if (srcValue) {
+                const braipLinks = document.querySelectorAll('a[href*="ev.braip.com"]');
+                braipLinks.forEach(link => {
+                    try {
+                        const urlObj = new URL(link.href);
+                        urlObj.searchParams.set('src', srcValue);
+                        link.href = urlObj.toString();
+                    } catch(e) {}
+                });
+            }
+        });
+    </script>
+</body>
+</html>

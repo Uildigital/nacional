@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fignar Gotas - Portal Oficial Seguro</title>
+
+    <!-- Google tag (gtag.js) - MCC -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16561813775"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-16561813775');
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap');
+        
+        :root {
+            --primary: #0F172A; /* Slate 900 */
+            --blue-brand: #0284C7; /* Sky 600 */
+            --green-safe: #10B981; /* Emerald 500 */
+            --green-dark: #059669; /* Emerald 600 */
+            --red-alert: #DC2626; /* Red 600 */
+            --bg-body: #F8FAFC;
+            --text-dark: #1E293B;
+            --text-muted: #475569;
+            --border-light: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary);
+            background-image: url('bg_desktop.png');
+            background-size: cover;
+            background-position: top center;
+            background-attachment: fixed;
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+
+
+        .header-alert {
+            background-color: var(--red-alert);
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .header-alert svg {
+            width: 22px;
+            height: 22px;
+            animation: pulse-icon 2s infinite;
+        }
+
+        @keyframes pulse-icon {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.15); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.92); /* Leve transparência */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 12px;
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.15);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            overflow: hidden;
+        }
+
+        .hero-section {
+            padding: 50px 45px 35px;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(241,245,249,0.8) 100%);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+        }
+
+        .security-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #ECFDF5;
+            color: var(--green-dark);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.85rem;
+            margin-bottom: 25px;
+            border: 2px solid #A7F3D0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            color: var(--primary);
+            line-height: 1.15;
+            margin-bottom: 15px;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+
+        h1 span {
+            color: var(--blue-brand);
+            position: relative;
+            display: inline-block;
+        }
+
+        h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #38BDF8;
+            border-radius: 3px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-weight: 500;
+            max-width: 650px;
+            margin: 0 auto 35px;
+        }
+
+        .product-hero-image {
+            margin: 0 auto 20px;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .product-hero-image img {
+            max-width: 100%;
+            height: auto;
+            max-height: 420px;
+            filter: drop-shadow(0 25px 25px rgba(0,0,0,0.15));
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 12px;
+        }
+
+        .product-hero-image img:hover {
+            transform: scale(1.04);
+        }
+
+        .fraud-alert {
+            background-color: #FEF2F2;
+            border: 1px solid #FECACA;
+            border-left: 6px solid var(--red-alert);
+            padding: 22px;
+            border-radius: 8px;
+            text-align: left;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(220,38,38,0.05);
+        }
+
+        .fraud-alert h4 {
+            color: var(--red-alert);
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .fraud-alert p {
+            font-size: 1rem;
+            color: #991B1B;
+            line-height: 1.5;
+        }
+
+        .content-section {
+            padding: 45px;
+            background-color: transparent;
+        }
+
+        .grid-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 45px;
+        }
+
+        .benefit-card {
+            background: #F8FAFC;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid var(--border-light);
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            transition: all 0.2s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px -5px rgba(0,0,0,0.06);
+            background: #fff;
+            border-color: #CBD5E1;
+        }
+
+        .benefit-icon {
+            background: #E0F2FE;
+            color: var(--blue-brand);
+            padding: 14px;
+            border-radius: 12px;
+            display: flex;
+        }
+
+        .benefit-icon svg {
+            width: 26px;
+            height: 26px;
+        }
+
+        .benefit-text h4 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .benefit-text p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .guarantee-box {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            background: #FFFBEB;
+            border: 2px dashed #FDE68A;
+            padding: 35px;
+            border-radius: 12px;
+            margin-bottom: 45px;
+        }
+
+        .guarantee-text h3 {
+            color: #92400E;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+
+        .guarantee-text p {
+            font-size: 1.05rem;
+            color: #B45309;
+            line-height: 1.6;
+        }
+
+        .cta-container {
+            text-align: center;
+            padding: 10px 20px 45px;
+        }
+
+        .btn-checkout {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--green-safe) 0%, var(--green-dark) 100%);
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 900;
+            padding: 24px 45px;
+            border-radius: 14px;
+            text-transform: uppercase;
+            box-shadow: 0 15px 30px rgba(5, 150, 105, 0.35);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 650px;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-checkout:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(5, 150, 105, 0.45);
+        }
+
+        .btn-checkout::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.4), rgba(255,255,255,0));
+            transform: skewX(-20deg);
+            animation: gloss 3s infinite;
+        }
+
+        .secure-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 18px;
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .secure-info svg {
+            width: 20px;
+            height: 20px;
+            color: var(--green-dark);
+        }
+
+        .faq-section {
+            border-top: 1px solid var(--border-light);
+            padding-top: 35px;
+            margin-top: 10px;
+        }
+
+        .faq-section h3 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+            font-weight: 800;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            background: #F8FAFC;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+        }
+
+        .faq-item h5 {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+        }
+        
+        .faq-item h5::before {
+            content: "P:";
+            color: var(--blue-brand);
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+
+        .faq-item p {
+            font-size: 1rem;
+            color: var(--text-muted);
+            padding-left: 30px;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px 60px;
+            font-size: 0.9rem;
+            color: #94A3B8;
+        }
+
+        footer a {
+            color: #64748B;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .legal {
+            max-width: 700px;
+            margin: 25px auto 0;
+            line-height: 1.6;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            body { overflow-x: hidden; background-image: url('bg_mobile.png'); }
+            .container { margin: 15px 10px; border-radius: 10px; width: auto; overflow: hidden; }
+            h1 { font-size: 2rem; }
+            .hero-section, .content-section { padding: 25px 15px; }
+            .guarantee-box { flex-direction: column; text-align: center; gap: 15px; padding: 20px 15px; }
+            .btn-checkout { font-size: 1.15rem; padding: 16px; width: 100%; display: block; white-space: normal; line-height: 1.3; }
+            .product-hero-image img { max-height: 240px; }
+            .cta-container a.btn-checkout { font-size: 1.15rem !important; padding: 16px !important; }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.7rem; }
+            .btn-checkout { font-size: 1.05rem !important; }
+            .header-alert { font-size: 0.85rem; padding: 10px; }
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.35);
+            backdrop-filter: blur(4px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .modal-content {
+            background: #ffffff;
+            border-radius: 16px;
+            max-width: 500px;
+            width: 100%;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            position: relative;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+            border: 2px solid var(--blue-brand);
+        }
+
+        .modal-overlay.hidden .modal-content {
+            transform: scale(0.9);
+        }
+
+        .modal-icon {
+            background: #FEF3C7;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 40px;
+            box-shadow: 0 4px 10px rgba(245, 158, 11, 0.2);
+        }
+
+        .modal-title {
+            color: var(--primary);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .modal-text {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .modal-text strong {
+            color: var(--red-alert);
+            font-size: 1.2rem;
+        }
+
+        .modal-btn {
+            display: block;
+            background: linear-gradient(135deg, var(--green-safe) 0%, var(--green-dark) 100%);
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 900;
+            padding: 20px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+            transition: all 0.2s ease;
+            margin-bottom: 15px;
+            animation: pulse-btn 2s infinite;
+        }
+
+        .modal-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(16, 185, 129, 0.4);
+        }
+
+        @keyframes pulse-btn {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .modal-close {
+            color: #94A3B8;
+            font-size: 0.9rem;
+            text-decoration: underline;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .modal-close:hover {
+            color: var(--primary);
+        }
+    </style>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+    <!-- Offer Pop-up Modal -->
+    <div id="cookieModal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 400px; padding: 0; background: #ffffff; border-radius: 12px; overflow: hidden; border: none; text-align: center; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);">
+            <a href="https://ev.braip.com/campanhas/cpa/camx6pny8#action" style="position: absolute; top: 12px; right: 15px; font-size: 1.5rem; color: #fff; text-decoration: none; line-height: 1; z-index: 10; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">&times;</a>
+            
+            <div style="background: var(--red-alert); color: white; padding: 12px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1rem; text-transform: uppercase;">
+                ALERTA DE DESCONTO EXCLUSIVO!
+            </div>
+            
+            <div style="padding: 20px;">
+                <img src="Fignar.png" alt="Fignar Gotas" style="max-width: 130px; height: auto; margin-bottom: 15px; filter: drop-shadow(0 15px 15px rgba(0,0,0,0.15));">
+                
+                <h2 style="font-size: 1.5rem; color: var(--primary); font-family: 'Montserrat', sans-serif; font-weight: 900; line-height: 1.1; margin-bottom: 10px;">
+                    NÃO FECHE A PÁGINA AINDA!
+                </h2>
+                
+                <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 20px; line-height: 1.4;">
+                    Você acaba de desbloquear um <strong style="color: var(--green-dark);">desconto extra e Frete Grátis</strong> para o Fignar Original. Essa oferta é válida apenas para os próximos minutos.
+                </p>
+                
+                <a href="https://ev.braip.com/campanhas/cpa/camx6pny8#action" class="modal-btn" style="width: 100%; display: block; background: linear-gradient(135deg, var(--green-safe) 0%, var(--green-dark) 100%); color: white; padding: 16px; border-radius: 10px; text-decoration: none; font-weight: 900; font-family: 'Montserrat', sans-serif; font-size: 1.1rem; text-transform: uppercase;">
+                    PEGAR MEU DESCONTO AGORA
+                </a>
+                
+                <a href="https://ev.braip.com/campanhas/cpa/camx6pny8#action" style="display: block; margin-top: 12px; color: #94A3B8; text-decoration: underline; font-size: 0.85rem;">
+                    Não, quero perder essa oportunidade
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Rastreamento Avançado (Braip - Modo Espião)
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const kw = urlParams.get('kw') || '';
+            const cp = urlParams.get('cp') || '';
+            const dv = urlParams.get('dv') || '';
+            
+            let srcParts = [];
+            if(kw) srcParts.push('kw-' + kw);
+            if(cp) srcParts.push('cp-' + cp);
+            if(dv) srcParts.push('dv-' + dv);
+            const srcValue = srcParts.join('_');
+
+            if (srcValue) {
+                const braipLinks = document.querySelectorAll('a[href*="ev.braip.com"]');
+                braipLinks.forEach(link => {
+                    try {
+                        const urlObj = new URL(link.href);
+                        urlObj.searchParams.set('src', srcValue);
+                        link.href = urlObj.toString();
+                    } catch(e) {}
+                });
+            }
+        });
+    </script>
+</body>
+</html>

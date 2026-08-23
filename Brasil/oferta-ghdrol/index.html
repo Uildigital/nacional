@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghdrol - Oferta Oficial e Segura</title>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- INSTRUÇÃO: Cole a NOVA tag do Google Ads da nova conta aqui embaixo -->
+    <!-- Google tag (gtag.js) -->
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+        
+        :root {
+            --main-slate: #0F172A;
+            --yellow-accent: #EAB308;
+            --yellow-darker: #CA8A04;
+            --emerald-ok: #10B981;
+            --emerald-deep: #059669;
+            --danger-red: #DC2626;
+            --body-bg: #1E293B;
+            --font-light: #F8FAFC;
+            --font-gray: #CBD5E1;
+            --line-border: #334155;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--body-bg);
+            color: var(--font-light);
+            line-height: 1.6;
+        }
+
+        .main-page-wrapper {
+            width: 100%;
+        }
+
+        .top-notice-bar {
+            background-color: var(--yellow-accent);
+            color: var(--main-slate);
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            text-transform: uppercase;
+        }
+
+        .top-notice-bar svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .content-box-limit {
+            max-width: 850px;
+            margin: 35px auto;
+            background: var(--main-slate);
+            border-radius: 14px;
+            border: 1px solid var(--line-border);
+            overflow: hidden;
+        }
+
+        .intro-banner {
+            padding: 45px 40px;
+            text-align: center;
+            background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%);
+            border-bottom: 1px solid var(--line-border);
+        }
+
+        .trust-indicator {
+            display: inline-block;
+            background: rgba(234, 179, 8, 0.15);
+            color: var(--yellow-accent);
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            border: 1px solid rgba(234, 179, 8, 0.25);
+            text-transform: uppercase;
+        }
+
+        .intro-banner h1 {
+            font-size: 2.7rem;
+            color: #fff;
+            margin-bottom: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .intro-banner h1 span {
+            color: var(--yellow-accent);
+            text-decoration: underline;
+            text-decoration-color: var(--yellow-darker);
+            text-decoration-thickness: 4px;
+        }
+
+        .sub-text {
+            font-size: 1.15rem;
+            color: var(--font-gray);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .visual-product-showcase img {
+            max-width: 100%;
+            border-radius: 10px;
+            max-height: 400px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        .warning-message-box {
+            background-color: rgba(220, 38, 38, 0.08);
+            border-left: 5px solid var(--danger-red);
+            padding: 20px;
+            border-radius: 6px;
+            text-align: left;
+            margin-top: 25px;
+        }
+
+        .warning-message-box strong {
+            color: #FCA5A5;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .details-wrapper {
+            padding: 40px;
+            background-color: var(--main-slate);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            background: #1E293B;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--line-border);
+        }
+
+        .feature-item h4 {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .action-link-main {
+            display: block;
+            background: linear-gradient(90deg, var(--emerald-ok) 0%, var(--emerald-deep) 100%);
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 900;
+            padding: 22px 30px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .action-link-main.variant-yellow {
+            background: linear-gradient(90deg, var(--yellow-accent) 0%, var(--yellow-darker) 100%);
+            color: var(--main-slate);
+        }
+
+        .privacy-dialog-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .consent-box-inner {
+            background: #fff;
+            border-radius: 12px;
+            max-width: 520px;
+            padding: 30px;
+            color: #333;
+        }
+
+        .consent-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .consent-body {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .consent-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .btn-accept-all {
+            background: #2563eb;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-settings {
+            background: #e2e8f0;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .footer-area {
+            text-align: center;
+            padding: 30px;
+            color: #64748B;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-page-wrapper">
+        <div id="privacyConsent" class="privacy-dialog-bg">
+            <div class="consent-box-inner">
+                <div class="consent-title">Proteção de Dados e Navegação</div>
+                <div class="consent-body">
+                    Utilizamos tecnologias locais para guardar preferências e melhorar a sua experiência neste portal. Ao prosseguir, você concorda com os nossos Termos de Uso e Política de Privacidade para análise de métricas e personalização.
+                </div>
+                <div class="consent-buttons">
+                    <a href="https://ev.braip.com/campanhas/cpa/cam7jz1vj#action" class="btn-settings">Opções</a>
+                    <a href="https://ev.braip.com/campanhas/cpa/cam7jz1vj#action" class="btn-accept-all">Concordar e Continuar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-notice-bar">
+            <span>Atenção: Oferta Especial com Estoque Limitado Hoje.</span>
+        </div>
+
+        <div class="content-box-limit">
+            <div class="intro-banner">
+                <div class="trust-indicator">Ambiente Criptografado</div>
+                <h1>Adquira o <span>Ghdrol Genuíno</span></h1>
+                <p class="sub-text">O portal oficial autorizado para compra direta da fábrica. Garanta o seu suplemento com total segurança.</p>
+                
+                <a href="https://ev.braip.com/campanhas/cpa/cam7jz1vj#action" class="action-link-main variant-yellow">
+                    LIBERAR MEU ACESSO VIP
+                </a>
+
+                <div class="visual-product-showcase">
+                    <img src="/oferta-ghdrol/ghdrol-funciona.webp" alt="Ghdrol Pote" onerror="this.src='https://placehold.co/600x400/1E293B/EAB308?text=Imagem+Ghdrol'">
+                </div>
+
+                <div class="warning-message-box">
+                    <strong>Alerta Antifraude</strong>
+                    Diga não à pirataria. O Ghdrol oficial não é vendido em marketplaces. Compre apenas através deste site parceiro autorizado.
+                </div>
+            </div>
+
+            <div class="details-wrapper">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h4>Desenvolvimento</h4>
+                        <p>A fórmula avançada ajuda no ganho de massa de forma inteligente e progressiva.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Certificação</h4>
+                        <p>Totalmente dentro das normas nacionais, sem riscos associados a químicos pesados.</p>
+                    </div>
+                </div>
+
+                <a href="https://ev.braip.com/campanhas/cpa/cam7jz1vj#action" class="action-link-main">
+                    IR PARA O CHECKOUT OFICIAL
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-area">
+            <p>O produtor reserva-se os direitos de entrega e garantia do produto. Este é um portal de indicação.</p>
+            <p>&copy; 2026. Distribuição Natural. Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const queryP = new URLSearchParams(window.location.search);
+            let mapKeys = [];
+            
+            if(queryP.get('kw')) mapKeys.push('kw-' + queryP.get('kw'));
+            if(queryP.get('cp')) mapKeys.push('cp-' + queryP.get('cp'));
+            if(queryP.get('dv')) mapKeys.push('dv-' + queryP.get('dv'));
+            
+            const trck = mapKeys.join('_');
+            
+            if(trck) {
+                document.querySelectorAll('a[href*="braip"]').forEach(a => {
+                    try {
+                        let u = new URL(a.href);
+                        u.searchParams.set('src', trck);
+                        a.href = u.toString();
+                    } catch(err) {}
+                });
+            }
+        });
+    </script>
+</body>
+</html>
