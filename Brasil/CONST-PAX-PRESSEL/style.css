@@ -708,3 +708,23 @@ details[open] summary i {
 
 
 
+
+/* Prevenção de Overflow no Mobile */
+img {
+    max-width: 100% !important;
+    height: auto;
+}
+.payment-logos {
+    width: 100% !important;
+}
+.btn-buy {
+    max-width: 100% !important;
+    white-space: normal !important;
+    height: auto !important;
+    word-wrap: break-word;
+    box-sizing: border-box !important;
+}
+.container {
+    overflow-x: hidden;
+    box-sizing: border-box !important;
+}
