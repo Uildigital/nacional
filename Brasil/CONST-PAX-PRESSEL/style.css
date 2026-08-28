@@ -760,3 +760,28 @@ details[open] summary i {
         margin: 20px auto 0 auto !important;
     }
 }
+
+/* Correção definitiva de blowout (vazamento) em telas muito pequenas (menores que 350px) */
+* {
+    min-width: 0; /* Impede que itens do flexbox estiquem a tela */
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    p, h1, h2, h3, h4, h5, h6, li, span, a {
+        word-break: break-word !important; /* Força palavras grandes a quebrarem em telas minúsculas */
+        overflow-wrap: break-word !important;
+    }
+    
+    .section-title {
+        font-size: 1.8rem !important;
+    }
+    
+    .hero-title {
+        font-size: 1.9rem !important;
+    }
+}
