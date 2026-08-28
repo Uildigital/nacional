@@ -255,8 +255,9 @@ img {
 
 .benefits-list li i {
     color: #25d366;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-top: 4px;
+    flex-shrink: 0;
 }
 
 .offers-product-img {
@@ -740,3 +741,4 @@ details[open] summary i {
         overflow-x: hidden;
     }
 }
+
