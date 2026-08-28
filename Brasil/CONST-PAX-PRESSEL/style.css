@@ -743,3 +743,20 @@ details[open] summary i {
 }
 
 
+
+@media (max-width: 768px) {
+    .about-text {
+        text-align: center !important;
+        padding: 0 15px !important;
+    }
+    .about-text p {
+        text-align: center !important;
+    }
+    .benefits-list li {
+        text-align: left !important;
+    }
+    .about-product-img {
+        max-width: 60% !important;
+        margin: 20px auto 0 auto !important;
+    }
+}
