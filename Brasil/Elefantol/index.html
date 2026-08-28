@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghdrol - Acesso Oficial Verificado</title>
+    <title>Elefantol - Acesso Oficial Verificado</title>
 
     <!-- Google tag (gtag.js) - MCC BRASIL -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16772383581"></script>
@@ -23,12 +23,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap');
         
         :root {
-            --primary: #0F172A;
-            --gold-brand: #EAB308;
-            --gold-dark: #CA8A04;
-            --green-safe: #10B981;
-            --green-dark: #059669;
-            --red-alert: #DC2626;
+            --primary: #0F172A; /* Slate 900 */
+            --gold-brand: #EAB308; /* Yellow 500 */
+            --gold-dark: #CA8A04; /* Yellow 600 */
+            --green-safe: #10B981; /* Emerald 500 */
+            --green-dark: #059669; /* Emerald 600 */
+            --red-alert: #DC2626; /* Red 600 */
             --text-muted: #475569;
         }
 
@@ -46,17 +46,18 @@
             background-position: top center;
             background-attachment: fixed;
             -webkit-font-smoothing: antialiased;
-            overflow: hidden;
+            overflow: hidden; /* Mantém a tela travada no modal */
         }
 
         @media (max-width: 768px) {
             body { background-image: url('bg_mobile.png'); }
         }
 
+        /* Modal Styles */
         .modal-overlay {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(15, 23, 42, 0.35);
+            background: rgba(15, 23, 42, 0.35); /* Desfoque Escuro */
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
             z-index: 9999;
@@ -117,7 +118,7 @@
         }
 
         .modal-text strong {
-            color: var(--gold-dark);
+            color: var(--green-dark);
         }
 
         .modal-btn {
@@ -168,45 +169,47 @@
             z-index: 10000;
             pointer-events: none;
         }
+
+        .google-disclaimer a {
+            color: #CBD5E1;
+            text-decoration: underline;
+            margin: 0 5px;
+        }
     </style>
 </head>
 <body>
 
+    <!-- Offer Pop-up Modal -->
     <div class="modal-overlay">
         <div class="modal-content">
-            <a href="https://ev.braip.com/campanhas/cpa/cam7jz1vj#action" onclick="showLoadingState(this, event)" style="position: absolute; top: 12px; right: 15px; font-size: 1.5rem; color: #fff; text-decoration: none; line-height: 1; z-index: 10; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">&times;</a>
+            <a href="https://ev.braip.com/campanhas/cpa/camk7grod#action" onclick="showLoadingState(this, event)" style="position: absolute; top: 12px; right: 15px; font-size: 1.5rem; color: #fff; text-decoration: none; line-height: 1; z-index: 10; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">&times;</a>
             
             <div class="modal-header">
                 ALERTA DE DESCONTO EXCLUSIVO!
             </div>
             
             <div class="modal-body">
-                <img src="ghdrol-funciona.webp" alt="Ghdrol">
+                <img src="Elefantol.webp" alt="Elefantol">
                 
                 <h2 class="modal-title">NÃO FECHE A PÁGINA AINDA!</h2>
                 
                 <p class="modal-text">
-                    Você acaba de desbloquear um <strong>desconto extra e Frete Grátis</strong> para o Ghdrol Original. Essa oferta é válida apenas para os próximos minutos.
+                    Você acaba de desbloquear um <strong>desconto extra e Frete Grátis</strong> para o Elefantol Original. Essa oferta é válida apenas para os próximos minutos.
                 </p>
                 
-                <a href="https://ev.braip.com/campanhas/cpa/cam7jz1vj#action" onclick="showLoadingState(this, event)" class="modal-btn">
+                <a href="https://ev.braip.com/campanhas/cpa/camk7grod#action" onclick="showLoadingState(this, event)" class="modal-btn">
                     PEGAR MEU DESCONTO AGORA
                 </a>
                 
-                <a href="https://ev.braip.com/campanhas/cpa/cam7jz1vj#action" onclick="showLoadingState(this, event)" class="modal-reject">
+                <a href="https://ev.braip.com/campanhas/cpa/camk7grod#action" onclick="showLoadingState(this, event)" class="modal-reject">
                     Não, quero perder essa oportunidade
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="google-disclaimer">
-        Este site não é afiliado ao Google ou a qualquer entidade do Google. Depois de sair do Google, a responsabilidade é nossa.<br>
-        &copy; 2026 Ghdrol. Todos os direitos reservados.<br>
-        <a href="privacidade.html">Políticas de Privacidade</a> | <a href="termos.html">Termos de Uso</a>
-    </div>
-
     <script>
+        // Função de Feedback Visual no Botão (Mesma do Fignar)
         function showLoadingState(element, event) {
             if (element.classList.contains('modal-btn')) {
                 element.innerHTML = 'CARREGANDO... ⏳';
@@ -215,6 +218,7 @@
             }
         }
 
+        // Rastreamento Avançado (Braip - Modo Espião)
         document.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
             const kw = urlParams.get('kw') || '';
@@ -239,5 +243,9 @@
             }
         });
     </script>
+    <div class="google-disclaimer">
+        Este site não é afiliado ao Google ou a qualquer entidade do Google. Depois de sair do Google, a responsabilidade é nossa.<br>
+        &copy; 2026 Elefantol. Todos os direitos reservados.
+    </div>
 </body>
 </html>

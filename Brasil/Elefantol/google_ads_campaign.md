@@ -115,6 +115,30 @@ Recomendo iniciar com correspondência exata e de frase para proteger o orçamen
 *   **Descrição 2 (Máx 35):** Fórmula 100% concentrada.
 *   **URL:** `https://naturalvir.com.br/Elefantol/#resultados`
 
+**Sitelink 9:**
+*   **Texto (Máx 25):** Compra 100% Discreta
+*   **Descrição 1 (Máx 35):** Embalagem sem identificação.
+*   **Descrição 2 (Máx 35):** Total sigilo na sua entrega.
+*   **URL:** `https://naturalvir.com.br/Elefantol/#discreto`
+
+**Sitelink 10:**
+*   **Texto (Máx 25):** Kit 5 Potes (Popular)
+*   **Descrição 1 (Máx 35):** Tratamento mais vendido.
+*   **Descrição 2 (Máx 35):** Economize comprando o kit.
+*   **URL:** `https://naturalvir.com.br/Elefantol/#kit5`
+
+**Sitelink 11:**
+*   **Texto (Máx 25):** Resultados Comprovados
+*   **Descrição 1 (Máx 35):** Clientes 100% satisfeitos.
+*   **Descrição 2 (Máx 35):** Alcance o seu potencial.
+*   **URL:** `https://naturalvir.com.br/Elefantol/#comprovado`
+
+**Sitelink 12:**
+*   **Texto (Máx 25):** Suporte Exclusivo VIP
+*   **Descrição 1 (Máx 35):** Atendimento personalizado.
+*   **Descrição 2 (Máx 35):** Tire suas dúvidas facilmente.
+*   **URL:** `https://naturalvir.com.br/Elefantol/#suporte`
+
 ---
 
 ## 5. Frases de Destaque (Callouts)
