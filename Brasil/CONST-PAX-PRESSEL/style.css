@@ -724,7 +724,5 @@ img {
     word-wrap: break-word;
     box-sizing: border-box !important;
 }
-.container {
-    overflow-x: hidden;
-    box-sizing: border-box !important;
-}
+
+
