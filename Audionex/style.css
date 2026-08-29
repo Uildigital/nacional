@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+﻿/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -633,7 +633,7 @@ details[open] summary i {
     }
     
     .offers-grid, .about-grid, .faq-grid, .steps-grid, .footer-grid, .guarantee-grid, .support-grid, .kits-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
     
     .security-images-grid {
@@ -840,3 +840,4 @@ html, body {
 
 .kits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; }
 .guarantee-grid, .support-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+
