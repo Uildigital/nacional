@@ -1,98 +1,122 @@
 {
-    "trailingSlash":  false,
-    "cleanUrls":  true,
-    "rewrites":  [
-                     {
-                         "destination":  "/Brasil/portalbiomed/:match*",
-                         "source":  "/portalbiomed/:match*"
-                     },
-                     {
-                         "destination":  "/Brasil/Elefantol/:match*",
-                         "source":  "/Elefantol/:match*"
-                     },
-                     {
-                         "destination":  "/Brasil/FIGNAR/:match*",
-                         "source":  "/FIGNAR/:match*"
-                     },
-                     {
-                         "destination":  "/Brasil/Ghdrol/:match*",
-                         "source":  "/Ghdrol/:match*"
-                     },
-                     {
-                         "destination":  "/Brasil/loja-br/:match*",
-                         "source":  "/loja-br/:match*"
-                     },
-                     {
-                         "destination":  "/Brasil/oferta-ghdrol/:match*",
-                         "source":  "/oferta-ghdrol/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/Glucotex/:match*",
-                         "source":  "/Glucotex/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/jellyThin/:match*",
-                         "source":  "/jellyThin/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/LipoSlend/:match*",
-                         "source":  "/LipoSlend/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/Protoflow/:match*",
-                         "source":  "/Protoflow/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/nervecalm/:match*",
-                         "source":  "/nervecalm/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/gl-pro/:match*",
-                         "source":  "/gl-pro/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/visiflora/:match*",
-                         "source":  "/visiflora/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/femicore/:match*",
-                         "source":  "/femicore/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/store/:match*",
-                         "source":  "/store/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/Vigortrix/:match*",
-                         "source":  "/Vigortrix/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/EpiCooler/:match*",
-                         "source":  "/EpiCooler/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/FizzClean/:match*",
-                         "source":  "/FizzClean/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/jetterix/:match*",
-                         "source":  "/jetterix/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/SonaBuds/:match*",
-                         "source":  "/SonaBuds/:match*"
-                     },
-                     {
-                         "destination":  "/gringa/bellyflush/:match*",
-                         "source":  "/bellyflush/:match*"
-                     },
-                     {
-                         "destination":  "/Brasil/CONST-PAX-PRESSEL/:match*",
-                         "source":  "/const-pax/:match*"
-                     },
-                     {
-                         "destination":  "/Brasil/CONST-PAX-PRESSEL/",
-                         "source":  "/const-pax"
-                     }
-                 ]
+    "trailingSlash": false,
+    "cleanUrls": true,
+    "rewrites": [
+        {
+            "destination": "/Brasil/portalbiomed/:match*",
+            "source": "/portalbiomed/:match*"
+        },
+        {
+            "destination": "/Brasil/Elefantol/:match*",
+            "source": "/Elefantol/:match*"
+        },
+        {
+            "destination": "/Brasil/FIGNAR/:match*",
+            "source": "/FIGNAR/:match*"
+        },
+        {
+            "destination": "/Brasil/Ghdrol/:match*",
+            "source": "/Ghdrol/:match*"
+        },
+        {
+            "destination": "/Brasil/loja-br/:match*",
+            "source": "/loja-br/:match*"
+        },
+        {
+            "destination": "/Brasil/oferta-ghdrol/:match*",
+            "source": "/oferta-ghdrol/:match*"
+        },
+        {
+            "destination": "/gringa/Glucotex/:match*",
+            "source": "/Glucotex/:match*"
+        },
+        {
+            "destination": "/gringa/jellyThin/:match*",
+            "source": "/jellyThin/:match*"
+        },
+        {
+            "destination": "/gringa/LipoSlend/:match*",
+            "source": "/LipoSlend/:match*"
+        },
+        {
+            "destination": "/gringa/Protoflow/:match*",
+            "source": "/Protoflow/:match*"
+        },
+        {
+            "destination": "/gringa/nervecalm/:match*",
+            "source": "/nervecalm/:match*"
+        },
+        {
+            "destination": "/gringa/gl-pro/:match*",
+            "source": "/gl-pro/:match*"
+        },
+        {
+            "destination": "/gringa/visiflora/:match*",
+            "source": "/visiflora/:match*"
+        },
+        {
+            "destination": "/gringa/femicore/:match*",
+            "source": "/femicore/:match*"
+        },
+        {
+            "destination": "/gringa/store/:match*",
+            "source": "/store/:match*"
+        },
+        {
+            "destination": "/gringa/Vigortrix/:match*",
+            "source": "/Vigortrix/:match*"
+        },
+        {
+            "destination": "/gringa/EpiCooler/:match*",
+            "source": "/EpiCooler/:match*"
+        },
+        {
+            "destination": "/gringa/FizzClean/:match*",
+            "source": "/FizzClean/:match*"
+        },
+        {
+            "destination": "/gringa/jetterix/:match*",
+            "source": "/jetterix/:match*"
+        },
+        {
+            "destination": "/gringa/SonaBuds/:match*",
+            "source": "/SonaBuds/:match*"
+        },
+        {
+            "destination": "/gringa/bellyflush/:match*",
+            "source": "/bellyflush/:match*"
+        },
+        {
+            "destination": "/Brasil/CONST-PAX-PRESSEL/:match*",
+            "source": "/const-pax/:match*"
+        },
+        {
+            "destination": "/Brasil/CONST-PAX-PRESSEL/",
+            "source": "/const-pax"
+        },
+        {
+            "source": "/elefantol/:match*",
+            "destination": "/Brasil/Elefantol/:match*"
+        },
+        {
+            "source": "/elefantol",
+            "destination": "/Brasil/Elefantol/"
+        },
+        {
+            "source": "/nervocuremax/:match*",
+            "destination": "/Brasil/nervocuremax/:match*"
+        },
+        {
+            "source": "/nervocuremax",
+            "destination": "/Brasil/nervocuremax/"
+        },
+        {
+            "source": "/nervocure2/:match*",
+            "destination": "/Brasil/nervocure2/:match*"
+        },
+        {
+            "source": "/nervocure2",
+            "destination": "/Brasil/nervocure2/"
+        }
+    ]
 }
